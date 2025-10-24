@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:latihan1/esteh/login.dart';
+import 'package:studycase_btng/pages/login.dart';
 
 class Register extends StatefulWidget {
   const Register({super.key});
@@ -227,3 +227,4 @@ class _RegisterState extends State<Register> {
     );
   }
 }
+
