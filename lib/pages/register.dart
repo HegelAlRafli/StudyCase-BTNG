@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:latihan1/esteh/login.dart';
+import 'package:studycase_btng/pages/login.dart';
 
 class Register extends StatefulWidget {
   const Register({super.key});
@@ -104,16 +104,11 @@ class _RegisterState extends State<Register> {
                 decoration: InputDecoration(
                   labelText: "Password",
                   labelStyle: const TextStyle(color: Colors.black87),
-                  floatingLabelStyle: const TextStyle(
-                    color: Colors.red,
-                  ),
+                  floatingLabelStyle: const TextStyle(color: Colors.red),
                   helperText: _showHelperText
                       ? "Password must be at least 8 characters long"
                       : null,
-                  helperStyle: const TextStyle(
-                    color: Colors.red,
-                    fontSize: 12,
-                  ),
+                  helperStyle: const TextStyle(color: Colors.red, fontSize: 12),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
@@ -125,7 +120,7 @@ class _RegisterState extends State<Register> {
               ),
               SizedBox(height: 15),
 
-              // Sign Up 
+              // Sign Up
               SizedBox(
                 width: double.infinity,
                 height: 50,
@@ -216,10 +211,8 @@ class _RegisterState extends State<Register> {
                       ),
                     ),
                   ),
-
                 ],
               ),
-
             ],
           ),
         ),

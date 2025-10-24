@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:latihan1/esteh/profilePages.dart';
-import 'package:latihan1/esteh/register.dart';
+import 'package:studycase_btng/pages/botnav.dart';
+import 'package:studycase_btng/pages/profilePages.dart';
+import 'package:studycase_btng/pages/register.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -9,9 +10,8 @@ class Login extends StatefulWidget {
   State<Login> createState() => _LoginState();
 }
 
-
 class _LoginState extends State<Login> {
-    final FocusNode _passwordFocus = FocusNode();
+  final FocusNode _passwordFocus = FocusNode();
   bool _showHelperText = false;
 
   @override
@@ -88,16 +88,11 @@ class _LoginState extends State<Login> {
                 decoration: InputDecoration(
                   labelText: "Password",
                   labelStyle: const TextStyle(color: Colors.black87),
-                  floatingLabelStyle: const TextStyle(
-                    color: Colors.red,
-                  ),
+                  floatingLabelStyle: const TextStyle(color: Colors.red),
                   helperText: _showHelperText
                       ? "Password must be at least 8 characters long"
                       : null,
-                  helperStyle: const TextStyle(
-                    color: Colors.red,
-                    fontSize: 12,
-                  ),
+                  helperStyle: const TextStyle(color: Colors.red, fontSize: 12),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
@@ -129,7 +124,7 @@ class _LoginState extends State<Login> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => ProfilePages()),
+                      MaterialPageRoute(builder: (context) => Botnav()),
                     );
                   },
                   style: ElevatedButton.styleFrom(
@@ -195,7 +190,6 @@ class _LoginState extends State<Login> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-
                   Container(
                     width: 60,
                     height: 60,
@@ -242,10 +236,8 @@ class _LoginState extends State<Login> {
                       ),
                     ),
                   ),
-
                 ],
               ),
-
             ],
           ),
         ),
