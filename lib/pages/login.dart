@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:latihan1/esteh/profilePages.dart';
-import 'package:latihan1/esteh/register.dart';
+import 'package:studycase_btng/pages/profilePages.dart';
+import 'package:studycase_btng/pages/register.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -253,3 +253,4 @@ class _LoginState extends State<Login> {
     );
   }
 }
+
