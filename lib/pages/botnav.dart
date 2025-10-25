@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:studycase_btng/pages/homePages.dart';
 import 'package:studycase_btng/pages/notifPages.dart';
 import 'package:studycase_btng/pages/profilePages.dart';
 import 'package:studycase_btng/pages/search_page.dart';
@@ -12,12 +13,7 @@ class Botnav extends StatefulWidget {
 
 class _BotnavState extends State<Botnav> {
   int _currentIndex = 0;
-  final screens = [
-    Center(child: Text("Home")),
-    SearchPage(),
-    NotifPages(),
-    ProfilePages(),
-  ];
+  final screens = [HomePages(), SearchPage(), NotifPages(), ProfilePages()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
